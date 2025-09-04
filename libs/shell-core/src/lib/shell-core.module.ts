@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
-import { AngularRemoteComponentsModule } from '@onecx/angular-remote-components'
+import { AngularRemoteComponentsModule, SlotGroupComponent } from '@onecx/angular-remote-components'
 import { ToastModule } from 'primeng/toast'
 import { providePrimeNG } from 'primeng/config'
 import { GlobalErrorComponent } from './components/error-component/global-error.component'
@@ -18,6 +18,7 @@ import { provideTranslationPathFromMeta } from '@onecx/angular-utils'
 @NgModule({
   imports: [
     AngularRemoteComponentsModule,
+    SlotGroupComponent,
     CommonModule,
     RouterModule,
     SkeletonModule,

@@ -15,57 +15,43 @@
       [isStaticalMenu]="isStaticalMenuVisible()"
       [isHorizontalMenu]="isHorizontalMenuMode()"
     >
-      <div [hidden]="!isHorizontalMenuVisible()">
+      <div>
         <ocx-slot name="onecx-shell-horizontal-menu">
-          <ng-template #skeleton>
-            <div class="ml-4 flex flex-row gap-4">
-              <p-skeleton class="w-full h-full inline-block" height="35px" width="120px"></p-skeleton>
-              <p-skeleton class="w-full h-full inline-block" height="35px" width="120px"></p-skeleton>
-            </div>
-          </ng-template>
         </ocx-slot>
       </div>
     </ocx-shell-header>
 
     <p-toast [style]="{'word-break': 'break-word'}"></p-toast>
 
-    <div [hidden]="!isStaticalMenuVisible()" class="menu-wrapper">
-      <div class="layout-menu-container overflow-auto">
+    <div class="wrapper">
+      <div class="left">
         <ocx-slot [name]="verticalMenuSlotName">
-          <ng-template #skeleton>
-            <p-skeleton class="w-full h-full inline-block p-2" height="35px"></p-skeleton>
-          </ng-template>
         </ocx-slot>
+        <ocx-slot-group name="onecx-shell-body-left" direction="column"></ocx-slot-group>
       </div>
-    </div>
-
-    <div class="layout-main">
-      <!-- custom page content -->
-      <div class="layout-content relative">
+      <!--TODO: check display: flex-->
+      <div class="center">
         <ocx-slot name="onecx-shell-sub-header"></ocx-slot>
+        <ocx-slot-group name="onecx-shell-body-header"></ocx-slot-group>
         <ng-container *ngIf="!showContentProvider || (showContentProvider.showContent$ | async); else appLoading">
           <ng-content></ng-content>
           <router-outlet></router-outlet>
         </ng-container>
+        <ocx-slot-group name="onecx-shell-body-footer"></ocx-slot-group>
       </div>
-
-      <!-- page footer -->
-      <footer>
-        <ocx-slot
-          name="onecx-shell-footer"
-          class="onecx-shell-footer mx-3 flex flex-row flex-wrap align-items-center column-gap-3 row-gap-1 text-sm"
-          [inputs]="{ imageStyleClass: 'h-1rem vertical-align-middle' }"
-        >
-          <ng-template #skeleton>
-            <div class="flex align-items-center h-full justify-content-center" style="width: 26px">
-              <p-skeleton shape="circle" size="1rem" class="h-full flex align-items-center"></p-skeleton>
-            </div>
-          </ng-template>
-        </ocx-slot>
-      </footer>
+      <div class="right">
+        <ocx-slot-group name="onecx-shell-body-right" direction="column"></ocx-slot-group>
+      </div>
     </div>
-
-    <div *ngIf="menuActive || !!activeTopbarItem" class="layout-mask modal-in"></div>
+    <footer>
+          <ocx-slot
+            name="onecx-shell-footer"
+            class="onecx-shell-footer mx-3 flex flex-row flex-wrap align-items-center column-gap-3 row-gap-1 text-sm"
+            [inputs]="{ imageStyleClass: 'h-1rem vertical-align-middle' }"
+          >
+          <ocx-slot-group name="onecx-shell-footer"></ocx-slot-group>
+          </ocx-slot>
+        </footer>
   </ng-container>
 
   <ng-template #noTheme>

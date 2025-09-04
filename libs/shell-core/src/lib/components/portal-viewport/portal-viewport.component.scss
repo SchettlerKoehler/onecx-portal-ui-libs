@@ -1,3 +1,26 @@
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  top: 4rem;
+  position: fixed;
+  height: calc(100% - 4rem);
+  .left{
+    max-width: 20rem;
+    background-color: var(--menu-bg-color);
+    box-shadow: 1px 0 #0003;
+    overflow: auto;
+  }
+  .center{
+    flex-grow: 1
+  }
+  .right{
+    max-width: 25rem;
+  }
+}
+
+
+
+//TODO: remove
 $menuWrapperWidth: 17rem;
 $menuShadow: 1px 0 0 rgba(0, 0, 0, 0.2);
 

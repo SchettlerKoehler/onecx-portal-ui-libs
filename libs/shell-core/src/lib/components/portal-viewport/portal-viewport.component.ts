@@ -10,13 +10,14 @@ import {
 } from '@onecx/angular-integration-interface'
 import { MessageService } from 'primeng/api'
 import { PrimeNG } from 'primeng/config'
-import { filter, first, from, mergeMap, Observable, of } from 'rxjs'
+import { filter, first, from, mergeMap, Observable, of, startWith, firstValueFrom, tap, BehaviorSubject } from 'rxjs'
 import { SHOW_CONTENT_PROVIDER, ShowContentProvider } from '../../shell-interface/show-content-provider'
 import {
   WORKSPACE_CONFIG_BFF_SERVICE_PROVIDER,
   WorkspaceConfigBffService,
 } from '../../shell-interface/workspace-config-bff-service-provider'
 import { SlotService } from '@onecx/angular-remote-components'
+import { Topic } from '@onecx/accelerator'
 
 @Component({
   standalone: false,
@@ -66,6 +67,7 @@ export class PortalViewportComponent implements OnInit, OnDestroy {
         (profile?.accountSettings?.layoutAndThemeSettings?.colorScheme?.toLowerCase() as
           | typeof this.colorScheme
           | undefined) ?? this.colorScheme
+      this.menuActive$.subscribe(this.currentMenuState$)
     })
 
     this.themeService.currentTheme$
@@ -119,11 +121,15 @@ export class PortalViewportComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.removeDocumentClickListener?.()
+    this.menuActive$.destroy();
   }
+  private readonly menuActive$ = new Topic<{ isVisible: boolean }>('verticalMainMenu', 1)
+  private readonly currentMenuState$ = new BehaviorSubject<{ isVisible: boolean }>({ isVisible: true })
 
   onMenuButtonClick(event: MouseEvent) {
     this.activeTopbarItem = undefined
-    this.menuActive = !this.menuActive
+    //this.menuActive = !this.menuActive
+    this.menuActive$.publish({ isVisible: !this.currentMenuState$.value.isVisible })
     event.preventDefault()
     event.stopPropagation()
   }
