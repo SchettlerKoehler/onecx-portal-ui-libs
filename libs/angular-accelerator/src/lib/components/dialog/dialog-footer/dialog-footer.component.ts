@@ -14,12 +14,7 @@ import {
 } from '@angular/core'
 import { DynamicDialogConfig, DynamicDialogRef } from 'primeng/dynamicdialog'
 import { BehaviorSubject, Observable, map, withLatestFrom } from 'rxjs'
-import {
-  ButtonDialogButtonDetails,
-  ButtonDialogConfig,
-  ButtonDialogCustomButtonDetails,
-  ButtonDialogData,
-} from '../../../model/button-dialog'
+import { ButtonDialogButtonDetails, ButtonDialogConfig, ButtonDialogCustomButtonDetails, ButtonDialogData } from '@onecx/angular-accelerator/model'
 import {
   DialogState,
   DialogStateButtonClicked,

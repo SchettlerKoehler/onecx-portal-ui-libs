@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/angular'
 import { InteractiveDataViewComponent } from './interactive-data-view.component'
-import { Filter } from '../../model/filter.model'
+import { Filter } from '@onecx/angular-accelerator/model'
 import {
   defaultInteractiveDataViewArgs,
   defaultInteractiveDataViewArgTypes,

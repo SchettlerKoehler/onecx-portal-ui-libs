@@ -10,10 +10,10 @@ import { ChartModule } from 'primeng/chart'
 import { SelectButtonModule } from 'primeng/selectbutton'
 import { StorybookTranslateModule } from '../../storybook-translate.module'
 import { DynamicPipe } from '../../pipes/dynamic.pipe'
-import { DiagramType } from '../../model/diagram-type'
+import { DiagramType } from '@onecx/angular-accelerator/model'
 import { GroupByCountDiagramComponent } from './group-by-count-diagram.component'
 import { DiagramComponent } from '../diagram/diagram.component'
-import { ColumnType } from '../../model/column-type.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
 import { StorybookThemeModule } from '../../storybook-theme.module'
 import { TooltipModule } from 'primeng/tooltip';
 

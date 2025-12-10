@@ -1,10 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output, inject } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
 import { BehaviorSubject, Observable, combineLatest, map, mergeMap, of } from 'rxjs'
-import { ColumnType } from '../../model/column-type.model'
-import { DiagramColumn } from '../../model/diagram-column'
-import { DiagramData } from '../../model/diagram-data'
-import { DiagramType } from '../../model/diagram-type'
+import { ColumnType, DiagramColumn, DiagramData, DiagramType } from '@onecx/angular-accelerator/model'
 import { ObjectUtils } from '../../utils/objectutils'
 
 export interface GroupByCountDiagramComponentState {

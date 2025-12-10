@@ -1,13 +1,10 @@
 import { TranslateService } from '@ngx-translate/core'
 import { Observable, map, of } from 'rxjs'
 import { flattenObject } from '../../functions/flatten-object'
-import { ColumnType } from '../../model/column-type.model'
-import { DataSortDirection } from '../../model/data-sort-direction'
-import { DataTableColumn } from '../../model/data-table-column.model'
+import { ColumnType, DataSortDirection, DataTableColumn, Filter, FilterType } from '@onecx/angular-accelerator/model'
 import { ListGridData } from '../../components/data-list-grid/data-list-grid.component'
 import { Row } from '../../components/data-table/data-table.component'
 import { ObjectUtils } from '../../utils/objectutils'
-import { Filter, FilterType } from '../../model/filter.model'
 
 type RowListGridData = ListGridData | Row
 

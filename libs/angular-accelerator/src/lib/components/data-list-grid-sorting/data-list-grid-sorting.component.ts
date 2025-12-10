@@ -1,8 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { BehaviorSubject } from 'rxjs'
-import { DataSortDirection } from '../../model/data-sort-direction'
-import { DataColumnNameId } from '../../model/data-column-name-id.model'
-import { DataTableColumn } from '../../model/data-table-column.model'
+import { DataSortDirection, DataColumnNameId, DataTableColumn } from '@onecx/angular-accelerator/model'
 import { SelectChangeEvent } from 'primeng/select'
 
 export type ListGridSort = { sortColumn: string; sortDirection: DataSortDirection }

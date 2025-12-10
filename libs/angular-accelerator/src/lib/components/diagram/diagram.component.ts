@@ -3,10 +3,9 @@ import { TranslateService } from '@ngx-translate/core'
 import { ChartData, ChartOptions } from 'chart.js'
 import * as d3 from 'd3-scale-chromatic'
 import { PrimeIcons } from 'primeng/api'
-import { DiagramData } from '../../model/diagram-data'
-import { DiagramType } from '../../model/diagram-type'
+import { DiagramData, DiagramType } from '@onecx/angular-accelerator/model'
 import { ColorUtils } from '../../utils/colorutils'
-import { PrimeIcon } from '../../utils/primeicon.utils'
+import { PrimeIcon } from '@onecx/angular-accelerator/model'
 
 export interface DiagramLayouts {
   id: string

@@ -1,6 +1,11 @@
 import { Type } from '@angular/core'
-import { DialogButton } from '../services/portal-dialog.service'
-import { PrimeIcon } from '../utils/primeicon.utils'
+import { PrimeIcons } from 'primeng/api'
+/**
+ * @example let myIcon : PrimeIcon = PrimeIcons.myIcon
+ */
+export type PrimeIcon = (typeof PrimeIcons)[keyof Omit<typeof PrimeIcons, 'prototype'>]
+
+export type DialogButton = 'primary' | 'secondary' | 'custom'
 
 /**
  * Object describing details for button rendering containing key for translation, optional icon and optional parameters for translation

@@ -3,7 +3,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core'
 import { TranslateTestingModule } from 'ngx-translate-testing'
 import { ExportDataService } from './export-data.service'
 import { DateUtils } from '../utils/dateutils'
-import { ColumnType } from '../model/column-type.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
 
 describe('ExportDataService', () => {
   class ElementMock {

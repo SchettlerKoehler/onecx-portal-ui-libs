@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core'
 import { DialogService, DynamicDialogComponent } from 'primeng/dynamicdialog'
 import { Observable, filter, mergeMap } from 'rxjs'
 
-import { ButtonDialogButtonDetails, ButtonDialogCustomButtonDetails, ButtonDialogData } from '../model/button-dialog'
+import { ButtonDialogButtonDetails, ButtonDialogCustomButtonDetails, ButtonDialogData, DialogButton } from '@onecx/angular-accelerator/model'
 import { NavigationStart, Router } from '@angular/router'
 import {
   SKIP_STYLE_SCOPING,
@@ -14,7 +14,7 @@ import {
 import { REMOTE_COMPONENT_CONFIG } from '@onecx/angular-remote-components'
 import { CurrentLocationTopicPayload, EventsTopic, EventType, TopicEventType } from '@onecx/integration-interface'
 import { Capability, ShellCapabilityService, AppStateService } from '@onecx/angular-integration-interface'
-import { PrimeIcon } from '../utils/primeicon.utils'
+import { PrimeIcon } from '@onecx/angular-accelerator/model'
 import { DialogContentComponent } from '../components/dialog/dialog-content/dialog-content.component'
 import { DialogFooterComponent } from '../components/dialog/dialog-footer/dialog-footer.component'
 import { DialogMessageContentComponent } from '../components/dialog/dialog-message-content/dialog-message-content.component'
@@ -222,7 +222,7 @@ type Component<T extends unknown> = unknown extends T
       inputs?: Record<string, unknown>
     }
 
-export type DialogButton = 'primary' | 'secondary' | 'custom'
+
 export type DialogStateButtonClicked = 'primary' | 'secondary' | 'custom'
 
 /**

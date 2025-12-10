@@ -9,10 +9,8 @@ import {
   ViewChild,
   ViewChildren,
 } from '@angular/core'
-import { Filter, FilterType } from '../../model/filter.model'
-import { DataTableColumn } from '../../model/data-table-column.model'
+import { Filter, FilterType, DataTableColumn, ColumnType } from '@onecx/angular-accelerator/model'
 import { BehaviorSubject, Observable, combineLatest, debounceTime, map } from 'rxjs'
-import { ColumnType } from '../../model/column-type.model'
 import { PrimeTemplate } from 'primeng/api'
 import { findTemplate } from '../../utils/template.utils'
 import { ObjectUtils } from '../../utils/objectutils'

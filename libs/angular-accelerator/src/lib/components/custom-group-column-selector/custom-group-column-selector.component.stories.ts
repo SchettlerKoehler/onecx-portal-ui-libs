@@ -12,7 +12,7 @@ import { CheckboxModule } from 'primeng/checkbox'
 import { SelectButtonModule } from 'primeng/selectbutton'
 import { StorybookTranslateModule } from '../../storybook-translate.module'
 import { StorybookThemeModule } from '../../storybook-theme.module'
-import { ColumnType } from '../../model/column-type.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
 import { CustomGroupColumnSelectorComponent } from './custom-group-column-selector.component'
 import { TooltipModule } from 'primeng/tooltip'
 

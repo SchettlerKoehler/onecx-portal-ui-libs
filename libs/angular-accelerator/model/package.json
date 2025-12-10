@@ -1,0 +1,8 @@
+{
+  "name": "@onecx/angular-accelerator/model",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts"
+    }
+  }
+}

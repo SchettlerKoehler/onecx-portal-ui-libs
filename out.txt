@@ -1,0 +1,225 @@
+
+ NX   Running target build for project angular-accelerator and 8 tasks it depends on:
+
+
+
+> nx run angular-accelerator:copyPrimelocaleTranslations
+
+> mkdir -p libs/angular-accelerator/tmp/primelocale
+
+> cp node_modules/primelocale/de.json libs/angular-accelerator/tmp/primelocale/
+
+> cp node_modules/primelocale/en.json libs/angular-accelerator/tmp/primelocale/
+
+> sed -i 's/"de":/"primeng":/' libs/angular-accelerator/tmp/primelocale/de.json
+
+> sed -i 's/"en":/"primeng":/' libs/angular-accelerator/tmp/primelocale/en.json
+
+
+> nx run nx-migration-utils:build
+
+Compiling TypeScript files for project "nx-migration-utils"...
+Done compiling TypeScript files for project "nx-migration-utils".
+
+> nx run accelerator:build
+
+Compiling TypeScript files for project "accelerator"...
+Done compiling TypeScript files for project "accelerator".
+
+> nx run angular-testing:build:production
+
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-testing'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+- Copying assets
+[32m✔[39m Copying assets
+- Writing package manifest
+[32m✔[39m Writing package manifest
+[32m✔[39m Built @onecx/angular-testing
+[32m[39m
+[32m------------------------------------------------------------------------------[39m
+[32mBuilt Angular Package[39m
+[32m - from: /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/libs/angular-testing[39m
+[32m - to:   /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/dist/libs/angular-testing[39m
+[32m------------------------------------------------------------------------------[39m
+[37m[37m[39m[37m[39m
+[37m[37mBuild at: [1m2025-12-10T08:16:12.433Z[22m - Time: [1m3139[22mms[39m[37m[39m
+[37m[37m[39m[37m[39m
+
+> nx run integration-interface:build
+
+Compiling TypeScript files for project "integration-interface"...
+Done compiling TypeScript files for project "integration-interface".
+
+> nx run angular-integration-interface:build:production
+
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-integration-interface'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+- Copying assets
+[32m✔[39m Copying assets
+- Writing package manifest
+[32m✔[39m Writing package manifest
+[32m✔[39m Built @onecx/angular-integration-interface
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-integration-interface/mocks'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+[32m✔[39m Built @onecx/angular-integration-interface/mocks
+[32m[39m
+[32m------------------------------------------------------------------------------[39m
+[32mBuilt Angular Package[39m
+[32m - from: /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/libs/angular-integration-interface[39m
+[32m - to:   /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/dist/libs/angular-integration-interface[39m
+[32m------------------------------------------------------------------------------[39m
+[37m[37m[39m[37m[39m
+[37m[37mBuild at: [1m2025-12-10T08:16:17.847Z[22m - Time: [1m2689[22mms[39m[37m[39m
+[37m[37m[39m[37m[39m
+
+> nx run angular-utils:build:production
+
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-utils/guards'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+[32m✔[39m Built @onecx/angular-utils/guards
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-utils/mocks'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+[32m✔[39m Built @onecx/angular-utils/mocks
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-utils'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+- Copying assets
+[32m✔[39m Copying assets
+- Writing package manifest
+[32m✔[39m Writing package manifest
+[32m✔[39m Built @onecx/angular-utils
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-utils/theme/primeng'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+[32m✔[39m Built @onecx/angular-utils/theme/primeng
+[32m[39m
+[32m------------------------------------------------------------------------------[39m
+[32mBuilt Angular Package[39m
+[32m - from: /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/libs/angular-utils[39m
+[32m - to:   /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/dist/libs/angular-utils[39m
+[32m------------------------------------------------------------------------------[39m
+[37m[37m[39m[37m[39m
+[37m[37mBuild at: [1m2025-12-10T08:16:23.557Z[22m - Time: [1m4433[22mms[39m[37m[39m
+[37m[37m[39m[37m[39m
+
+> nx run angular-remote-components:build:production
+
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-remote-components'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+- Copying assets
+[32m✔[39m Copying assets
+- Writing package manifest
+[32m✔[39m Writing package manifest
+[32m✔[39m Built @onecx/angular-remote-components
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-remote-components/mocks'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+[32m✔[39m Built @onecx/angular-remote-components/mocks
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-remote-components/testing'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+[32m✔[39m Built @onecx/angular-remote-components/testing
+[32m[39m
+[32m------------------------------------------------------------------------------[39m
+[32mBuilt Angular Package[39m
+[32m - from: /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/libs/angular-remote-components[39m
+[32m - to:   /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/dist/libs/angular-remote-components[39m
+[32m------------------------------------------------------------------------------[39m
+[37m[37m[39m[37m[39m
+[37m[37mBuild at: [1m2025-12-10T08:16:27.896Z[22m - Time: [1m2925[22mms[39m[37m[39m
+[37m[37m[39m[37m[39m
+
+> nx run angular-accelerator:build:production
+
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-accelerator/model'[39m
+[37m------------------------------------------------------------------------------[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-accelerator/column-group-selection'[39m
+[37m------------------------------------------------------------------------------[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-accelerator'[39m
+[37m------------------------------------------------------------------------------[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point '@onecx/angular-accelerator/testing'[39m
+[37m------------------------------------------------------------------------------[39m
+[32m[39m
+[32m------------------------------------------------------------------------------[39m
+[32mBuilt Angular Package[39m
+[32m - from: /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/libs/angular-accelerator[39m
+[32m - to:   /home/jschettl/onecx/OneCX/onecx-portal-ui-libs/dist/libs/angular-accelerator[39m
+[32m------------------------------------------------------------------------------[39m
+[37m[37m[39m[37m[39m
+[37m[37mBuild at: [1m2025-12-10T08:16:37.714Z[22m - Time: [1m8518[22mms[39m[37m[39m
+[37m[37m[39m[37m[39m
+
+
+
+ NX   Successfully ran target build for project angular-accelerator and 8 tasks it depends on
+
+

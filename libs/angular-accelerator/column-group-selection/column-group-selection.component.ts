@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs'
-import { DataTableColumn } from '../../model/data-table-column.model'
+import { DataTableColumn } from '@onecx/angular-accelerator/model'
 
 export type GroupSelectionChangedEvent = { activeColumns: DataTableColumn[]; groupKey: string }
 export interface ColumnGroupSelectionComponentState {

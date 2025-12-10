@@ -1,5 +1,5 @@
 import { ModuleWithProviders, NgModule, inject } from '@angular/core'
-import { BreadCrumbMenuItem } from './model/breadcrumb-menu-item.model'
+import { BreadCrumbMenuItem } from '@onecx/angular-accelerator/model'
 import { BreadcrumbService } from './services/breadcrumb.service'
 import { StorybookTranslateModule } from './storybook-translate.module'
 

@@ -1,5 +1,4 @@
-import { DataTableColumn } from '../model/data-table-column.model'
-import { Filter, FilterObject } from '../model/filter.model'
+import { DataTableColumn, Filter, FilterObject } from '@onecx/angular-accelerator/model'
 import { ObjectUtils } from './objectutils'
 
 /* eslint-disable @typescript-eslint/no-unused-vars */

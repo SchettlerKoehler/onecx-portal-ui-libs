@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { PrimeIcons } from 'primeng/api'
-import { PrimeIcon } from '../../utils/primeicon.utils'
+import { PrimeIcon } from '@onecx/angular-accelerator/model'
 
 interface ViewingLayouts {
   id: string

@@ -1,0 +1,8 @@
+{
+  "name": "angular-accelerator-column-group-selection",
+  "projectType": "library",
+  "root": "libs/angular-accelerator/column-group-selection",
+  "sourceRoot": "libs/angular-accelerator/column-group-selection",
+  "targets": {},
+  "tags": []
+}

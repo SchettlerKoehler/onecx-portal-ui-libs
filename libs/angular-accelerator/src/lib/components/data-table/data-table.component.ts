@@ -36,11 +36,11 @@ import {
   switchMap,
   withLatestFrom,
 } from 'rxjs'
-import { ColumnType } from '../../model/column-type.model'
-import { DataAction } from '../../model/data-action'
-import { DataSortDirection } from '../../model/data-sort-direction'
-import { DataTableColumn } from '../../model/data-table-column.model'
-import { Filter, FilterType } from '../../model/filter.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
+import { DataAction } from '@onecx/angular-accelerator/model'
+import { DataSortDirection } from '@onecx/angular-accelerator/model'
+import { DataTableColumn } from '@onecx/angular-accelerator/model'
+import { Filter, FilterType } from '@onecx/angular-accelerator/model'
 import { ObjectUtils } from '../../utils/objectutils'
 import { findTemplate } from '../../utils/template.utils'
 import { DataSortBase } from '../data-sort-base/data-sort-base'

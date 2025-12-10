@@ -12,8 +12,7 @@ import { SelectButtonModule } from 'primeng/selectbutton'
 import { StorybookTranslateModule } from '../../storybook-translate.module'
 import { DynamicPipe } from '../../pipes/dynamic.pipe'
 import { DiagramComponent } from './diagram.component'
-import { DiagramType } from '../../model/diagram-type'
-import { DiagramData } from '../../model/diagram-data'
+import { DiagramType, DiagramData } from '@onecx/angular-accelerator/model'
 import { StorybookThemeModule } from '../../storybook-theme.module'
 import { TooltipModule } from 'primeng/tooltip';
 

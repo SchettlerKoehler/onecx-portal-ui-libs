@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { ButtonDialogConfig } from '../../../model/button-dialog'
+import { ButtonDialogConfig } from '@onecx/angular-accelerator/model'
 import { PrimeIcons } from 'primeng/api'
 import { DialogInlineComponent } from './dialog-inline.component'
 import { TestBed } from '@angular/core/testing'

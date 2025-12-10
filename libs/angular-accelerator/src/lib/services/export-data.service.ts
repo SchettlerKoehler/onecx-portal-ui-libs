@@ -2,7 +2,7 @@ import { Injectable, LOCALE_ID, inject } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
 import { Observable, firstValueFrom, map, of } from 'rxjs'
 import { DateUtils } from '../utils/dateutils'
-import { ColumnType } from '../model/column-type.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
 import { ObjectUtils } from '../utils/objectutils'
 
 @Injectable({ providedIn: 'any' })

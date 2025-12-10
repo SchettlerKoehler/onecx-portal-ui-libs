@@ -1,8 +1,6 @@
 import { TestBed } from '@angular/core/testing'
 import { DataOperationStrategy } from './data-operation-strategy'
-import { DataTableColumn } from '../model/data-table-column.model'
-import { FilterObject, FilterType } from '../model/filter.model'
-import { ColumnType } from '../model/column-type.model'
+import { DataTableColumn, FilterObject, FilterType, ColumnType } from '@onecx/angular-accelerator/model'
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 class NumberOperationStrategy extends DataOperationStrategy {

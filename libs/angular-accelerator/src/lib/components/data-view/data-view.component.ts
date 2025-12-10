@@ -16,10 +16,7 @@ import {
 } from '@angular/core'
 import { PrimeTemplate } from 'primeng/api'
 import { BehaviorSubject, Observable, ReplaySubject, combineLatest, map, startWith, timestamp } from 'rxjs'
-import { DataAction } from '../../model/data-action'
-import { DataSortDirection } from '../../model/data-sort-direction'
-import { DataTableColumn } from '../../model/data-table-column.model'
-import { Filter } from '../../model/filter.model'
+import { DataAction, DataSortDirection, DataTableColumn, Filter } from '@onecx/angular-accelerator/model'
 import { orderAndMergeValuesByTimestamp } from '../../utils/rxjs-utils'
 import {
   DataListGridComponent,

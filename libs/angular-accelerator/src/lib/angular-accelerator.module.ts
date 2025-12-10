@@ -9,7 +9,7 @@ import { AngularRemoteComponentsModule } from '@onecx/angular-remote-components'
 
 import { firstValueFrom, skip } from 'rxjs'
 import { AngularAcceleratorPrimeNgModule } from './angular-accelerator-primeng.module'
-import { ColumnGroupSelectionComponent } from './components/column-group-selection/column-group-selection.component'
+import { ColumnGroupSelectionModule } from '@onecx/angular-accelerator/column-group-selection'
 import { CustomGroupColumnSelectorComponent } from './components/custom-group-column-selector/custom-group-column-selector.component'
 import { DataLayoutSelectionComponent } from './components/data-layout-selection/data-layout-selection.component'
 import { DataListGridSortingComponent } from './components/data-list-grid-sorting/data-list-grid-sorting.component'
@@ -64,6 +64,7 @@ function appInitializer(userService: UserService) {
   imports: [
     CommonModule,
     AngularAcceleratorPrimeNgModule,
+    ColumnGroupSelectionModule,
     AngularRemoteComponentsModule,
     TranslateModule,
     FormsModule,
@@ -71,7 +72,6 @@ function appInitializer(userService: UserService) {
     ReactiveFormsModule,
   ],
   declarations: [
-    ColumnGroupSelectionComponent,
     CustomGroupColumnSelectorComponent,
     DataLayoutSelectionComponent,
     DataListGridSortingComponent,
@@ -130,7 +130,7 @@ function appInitializer(userService: UserService) {
   ],
   exports: [
     AngularRemoteComponentsModule,
-    ColumnGroupSelectionComponent,
+    ColumnGroupSelectionModule,
     CustomGroupColumnSelectorComponent,
     DataLayoutSelectionComponent,
     DataListGridComponent,

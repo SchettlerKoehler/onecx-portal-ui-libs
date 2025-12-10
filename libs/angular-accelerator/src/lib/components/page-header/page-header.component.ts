@@ -15,7 +15,7 @@ import { AppStateService, UserService } from '@onecx/angular-integration-interfa
 import { MenuItem, PrimeIcons } from 'primeng/api'
 import { BehaviorSubject, Observable, concat, map, of, switchMap } from 'rxjs'
 import { BreadcrumbService } from '../../services/breadcrumb.service'
-import { PrimeIcon } from '../../utils/primeicon.utils'
+import { PrimeIcon } from '@onecx/angular-accelerator/model'
 import { HAS_PERMISSION_CHECKER } from '@onecx/angular-utils'
 
 /**

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
-import { ButtonDialogConfig } from '../../../model/button-dialog'
+import { ButtonDialogConfig } from '@onecx/angular-accelerator/model'
 import { DialogState } from '../../../services/portal-dialog.service'
 
 @Component({

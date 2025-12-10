@@ -13,7 +13,6 @@ export * from './lib/directives/basic.directive'
 export * from './lib/directives/loading-indicator.directive'
 
 // components
-export * from './lib/components/column-group-selection/column-group-selection.component'
 export * from './lib/components/content/content.component'
 export * from './lib/components/content-container/content-container.component'
 export * from './lib/components/custom-group-column-selector/custom-group-column-selector.component'
@@ -35,6 +34,7 @@ export * from './lib/components/dialog/dialog-content/dialog-content.component'
 export * from './lib/components/dialog/dialog-inline/dialog-inline.component'
 export * from './lib/components/dialog/dialog-footer/dialog-footer.component'
 export * from './lib/components/error-component/global-error.component'
+export * from '@onecx/angular-accelerator/column-group-selection'
 
 // services
 export * from './lib/services/breadcrumb.service'
@@ -46,19 +46,8 @@ export * from './lib/pipes/dynamic.pipe'
 export * from './lib/pipes/ocxtimeago.pipe'
 export * from './lib/pipes/relative-date.pipe'
 
-// models
-export * from './lib/model/breadcrumb-menu-item.model'
-export * from './lib/model/column-type.model'
-export * from './lib/model/data-action'
-export * from './lib/model/button-dialog'
-
-// export * from './lib/model/data-column-name-id.model'
-export * from './lib/model/data-sort-direction'
-export * from './lib/model/data-table-column.model'
-export * from './lib/model/diagram-column'
-// export * from './lib/model/diagram-data'
-export * from './lib/model/diagram-type'
-export * from './lib/model/filter.model'
+// models (from secondary entry)
+export * from '@onecx/angular-accelerator/model'
 
 // core
 export * from './lib/angular-accelerator.module'
@@ -73,7 +62,6 @@ export * from './lib/utils/colorutils'
 export * from './lib/utils/data-operation-strategy'
 export * from './lib/utils/dateutils'
 export * from './lib/utils/objectutils'
-export * from './lib/utils/primeicon.utils'
 export * from './lib/utils/enum-to-dropdown-options.utils'
 export * from './lib/utils/criteria.utils'
 export * from './lib/utils/string-and-array-helper-functions.utils'

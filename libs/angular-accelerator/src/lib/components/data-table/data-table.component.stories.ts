@@ -10,7 +10,7 @@ import { UserServiceMock, provideUserServiceMock } from '@onecx/angular-integrat
 import { DataTableComponent } from './data-table.component'
 import { StorybookTranslateModule } from './../../storybook-translate.module'
 import { IfPermissionDirective } from '../../directives/if-permission.directive'
-import { ColumnType } from '../../model/column-type.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
 import { MenuModule } from 'primeng/menu'
 import { DynamicLocaleId } from '../../utils/dynamic-locale-id'
 import { CheckboxModule } from 'primeng/checkbox'

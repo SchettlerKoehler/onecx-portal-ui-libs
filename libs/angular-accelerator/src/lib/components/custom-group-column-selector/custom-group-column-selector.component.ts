@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output, inject } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
-import { DataTableColumn } from '../../model/data-table-column.model'
+import { DataTableColumn } from '@onecx/angular-accelerator/model'
 
 export type ColumnSelectionChangedEvent = { activeColumns: DataTableColumn[] }
 export type ActionColumnChangedEvent = {

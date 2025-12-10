@@ -1,0 +1,8 @@
+{
+  "name": "angular-accelerator-model",
+  "projectType": "library",
+  "root": "libs/angular-accelerator/model",
+  "sourceRoot": "libs/angular-accelerator/model",
+  "targets": {},
+  "tags": []
+}

@@ -15,7 +15,7 @@ import {
 } from '@onecx/angular-integration-interface/mocks'
 import { TooltipStyle } from 'primeng/tooltip'
 import { AngularAcceleratorModule } from '../../angular-accelerator.module'
-import { ColumnType } from '../../model/column-type.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
 import { DataListGridComponent } from '../data-list-grid/data-list-grid.component'
 import { DataTableComponent } from '../data-table/data-table.component'
 import { DataViewComponent } from './data-view.component'

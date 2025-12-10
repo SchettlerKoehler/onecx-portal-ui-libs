@@ -18,6 +18,8 @@
       "@onecx/accelerator": ["libs/accelerator/src/index.ts"],
       "@onecx/angular-accelerator": ["libs/angular-accelerator/src/index.ts"],
       "@onecx/angular-accelerator/testing": ["libs/angular-accelerator/testing/index.ts"],
+      "@onecx/angular-accelerator/column-group-selection": ["libs/angular-accelerator/column-group-selection/public-api.ts"],
+      "@onecx/angular-accelerator/model": ["libs/angular-accelerator/model/public-api.ts"],
       "@onecx/angular-auth": ["libs/angular-auth/src/index.ts"],
       "@onecx/angular-integration-interface": ["libs/angular-integration-interface/src/index.ts"],
       "@onecx/angular-integration-interface/mocks": ["libs/angular-integration-interface/mocks/index.ts"],

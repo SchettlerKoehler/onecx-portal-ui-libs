@@ -25,16 +25,13 @@ import {
   timestamp,
   withLatestFrom,
 } from 'rxjs'
-import { DataAction } from '../../model/data-action'
-import { DataSortDirection } from '../../model/data-sort-direction'
-import { DataTableColumn } from '../../model/data-table-column.model'
-import { Filter } from '../../model/filter.model'
+import { DataAction } from '@onecx/angular-accelerator/model'
+import { DataSortDirection } from '@onecx/angular-accelerator/model'
+import { DataTableColumn } from '@onecx/angular-accelerator/model'
+import { Filter } from '@onecx/angular-accelerator/model'
 import { limit } from '../../utils/filter.utils'
 import { orderAndMergeValuesByTimestamp } from '../../utils/rxjs-utils'
-import {
-  ColumnGroupSelectionComponentState,
-  GroupSelectionChangedEvent,
-} from '../column-group-selection/column-group-selection.component'
+import { ColumnGroupSelectionComponentState, GroupSelectionChangedEvent } from '@onecx/angular-accelerator/column-group-selection'
 import {
   ActionColumnChangedEvent,
   ColumnSelectionChangedEvent,

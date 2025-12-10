@@ -6,7 +6,7 @@ import {
   InteractiveDataViewTemplate,
   defaultInteractiveDataViewArgTypes,
 } from './storybook-config'
-import { ColumnType } from '../../model/column-type.model'
+import { ColumnType } from '@onecx/angular-accelerator/model'
 
 const InteractiveDataViewComponentDefaultSBConfig: Meta<InteractiveDataViewComponent> = {
   ...InteractiveDataViewComponentSBConfig,

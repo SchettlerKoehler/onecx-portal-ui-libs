@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core'
 import { Topic } from '@onecx/accelerator'
 import { MenuItem } from 'primeng/api'
 import { BehaviorSubject, filter, map } from 'rxjs'
-import { BreadCrumbMenuItem } from '../model/breadcrumb-menu-item.model'
+import { BreadCrumbMenuItem } from '@onecx/angular-accelerator/model'
 
 interface ManualBreadcrumbs {
   menuItems: MenuItem[]
