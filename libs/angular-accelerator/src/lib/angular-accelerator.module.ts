@@ -38,7 +38,7 @@ import { DynamicLocaleId } from './utils/dynamic-locale-id'
 import { FilterViewComponent } from './components/filter-view/filter-view.component'
 import { TemplateDirective } from './directives/template.directive'
 import { ContentModule } from '@onecx/angular-accelerator/content'
-import { OcxContentContainerComponent } from './components/content-container/content-container.component'
+import { ContentContainerModule } from '@onecx/angular-accelerator/content-container'
 import { OcxContentDirective } from './directives/content.directive'
 import { OcxContentContainerDirective } from './directives/content-container.directive'
 import { LifecycleComponent } from './components/lifecycle/lifecycle.component'
@@ -86,7 +86,6 @@ function appInitializer(userService: UserService) {
     SearchHeaderComponent,
     DiagramComponent,
     GroupByCountDiagramComponent,
-    OcxContentContainerComponent,
     IfPermissionDirective,
     IfBreakpointDirective,
     SrcDirective,
@@ -143,8 +142,8 @@ function appInitializer(userService: UserService) {
     SearchHeaderComponent,
     DiagramComponent,
     GroupByCountDiagramComponent,
-      ContentModule,
-    OcxContentContainerComponent,
+    ContentModule,
+    ContentContainerModule,
     IfPermissionDirective,
     IfBreakpointDirective,
     SrcDirective,
