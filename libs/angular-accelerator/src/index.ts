@@ -13,7 +13,7 @@ export * from './lib/directives/basic.directive'
 export * from './lib/directives/loading-indicator.directive'
 
 // components
-export * from './lib/components/content/content.component'
+export * from '@onecx/angular-accelerator/content'
 export * from './lib/components/content-container/content-container.component'
 export * from './lib/components/custom-group-column-selector/custom-group-column-selector.component'
 export * from './lib/components/data-layout-selection/data-layout-selection.component'

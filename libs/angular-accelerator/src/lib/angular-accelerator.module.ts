@@ -37,7 +37,7 @@ import { OcxTimeAgoPipe } from './pipes/ocxtimeago.pipe'
 import { DynamicLocaleId } from './utils/dynamic-locale-id'
 import { FilterViewComponent } from './components/filter-view/filter-view.component'
 import { TemplateDirective } from './directives/template.directive'
-import { OcxContentComponent } from './components/content/content.component'
+import { ContentModule } from '@onecx/angular-accelerator/content'
 import { OcxContentContainerComponent } from './components/content-container/content-container.component'
 import { OcxContentDirective } from './directives/content.directive'
 import { OcxContentContainerDirective } from './directives/content-container.directive'
@@ -65,6 +65,7 @@ function appInitializer(userService: UserService) {
     CommonModule,
     AngularAcceleratorPrimeNgModule,
     ColumnGroupSelectionModule,
+    ContentModule,
     AngularRemoteComponentsModule,
     TranslateModule,
     FormsModule,
@@ -85,7 +86,6 @@ function appInitializer(userService: UserService) {
     SearchHeaderComponent,
     DiagramComponent,
     GroupByCountDiagramComponent,
-    OcxContentComponent,
     OcxContentContainerComponent,
     IfPermissionDirective,
     IfBreakpointDirective,
@@ -131,6 +131,7 @@ function appInitializer(userService: UserService) {
   exports: [
     AngularRemoteComponentsModule,
     ColumnGroupSelectionModule,
+    ContentModule,
     CustomGroupColumnSelectorComponent,
     DataLayoutSelectionComponent,
     DataListGridComponent,
@@ -142,7 +143,7 @@ function appInitializer(userService: UserService) {
     SearchHeaderComponent,
     DiagramComponent,
     GroupByCountDiagramComponent,
-    OcxContentComponent,
+      ContentModule,
     OcxContentContainerComponent,
     IfPermissionDirective,
     IfBreakpointDirective,
