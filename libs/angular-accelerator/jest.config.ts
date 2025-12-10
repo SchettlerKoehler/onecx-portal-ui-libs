@@ -36,8 +36,11 @@ export default {
   moduleNameMapper: {
     '^d3-(.*)$': `d3-$1/dist/d3-$1`,
     '@primeng/themes': '<rootDir>/../../node_modules/@primeng/themes/index.mjs',
-    '^@onecx/angular-accelerator/model$': '<rootDir>/../model/public-api.ts',
-    '^@onecx/angular-accelerator/column-group-selection$': '<rootDir>/../column-group-selection/public-api.ts',
+    '^@onecx/angular-accelerator/model$': '<rootDir>/model/public-api.ts',
+    '^@onecx/angular-accelerator/column-group-selection$': '<rootDir>/column-group-selection/public-api.ts',
+    '^@onecx/angular-accelerator/custom-group-column-selector$': '<rootDir>/custom-group-column-selector/public-api.ts',
+    '^@onecx/angular-accelerator/content$': '<rootDir>/content/public-api.ts',
+    '^@onecx/angular-accelerator/content-container$': '<rootDir>/content-container/public-api.ts',
   },
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',

@@ -15,7 +15,7 @@ export * from './lib/directives/loading-indicator.directive'
 // components
 export * from '@onecx/angular-accelerator/content'
 export * from '@onecx/angular-accelerator/content-container'
-export * from './lib/components/custom-group-column-selector/custom-group-column-selector.component'
+export * from '@onecx/angular-accelerator/custom-group-column-selector'
 export * from './lib/components/data-layout-selection/data-layout-selection.component'
 export * from './lib/components/data-list-grid/data-list-grid.component'
 export * from './lib/components/data-list-grid-sorting/data-list-grid-sorting.component'

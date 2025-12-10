@@ -36,7 +36,7 @@ import {
   ActionColumnChangedEvent,
   ColumnSelectionChangedEvent,
   CustomGroupColumnSelectorComponentState,
-} from '../custom-group-column-selector/custom-group-column-selector.component'
+} from '@onecx/angular-accelerator/custom-group-column-selector'
 import { DataLayoutSelectionComponentState } from '../data-layout-selection/data-layout-selection.component'
 import { DataListGridSortingComponentState } from '../data-list-grid-sorting/data-list-grid-sorting.component'
 import { Row, Sort } from '../data-table/data-table.component'
@@ -591,7 +591,7 @@ export class InteractiveDataViewComponent implements OnInit, AfterContentInit {
   }
 
   onColumnSelectionChange(event: ColumnSelectionChangedEvent) {
-    this.displayedColumnKeys = event.activeColumns.map((col) => col.id)
+    this.displayedColumnKeys = event.activeColumns.map((col: DataTableColumn) => col.id)
     this.selectedGroupKey = this.customGroupKey
     this.displayedColumnKeysChange.emit(this.displayedColumnKeys)
   }
