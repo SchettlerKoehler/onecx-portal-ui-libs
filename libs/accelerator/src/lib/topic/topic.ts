@@ -291,7 +291,7 @@ export class Topic<T> extends TopicPublisher<T> implements Subscribable<T> {
   private disableBroadcastChannelV2() {
     window['@onecx/accelerator'] ??= {}
     window['@onecx/accelerator'].topic ??= {}
-    if (window['@onecx/accelerator'].topic.useBroadcastChannel === true) {
+    if (window['@onecx/accelerator'].topic.useBroadcastChannel === "V2") {
       this.logger.info('Disabling BroadcastChannel V2 for topic')
     }
     window['@onecx/accelerator'].topic.useBroadcastChannel = true
