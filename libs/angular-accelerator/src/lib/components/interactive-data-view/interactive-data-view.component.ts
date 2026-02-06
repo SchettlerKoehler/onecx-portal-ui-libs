@@ -45,6 +45,7 @@ import { DataListGridSortingComponentState } from '../data-list-grid-sorting/dat
 import { Row, Sort } from '../data-table/data-table.component'
 import { DataViewComponent, DataViewComponentState, RowListGridData } from '../data-view/data-view.component'
 import { FilterViewComponentState, FilterViewDisplayMode } from '../filter-view/filter-view.component'
+import { DataComponentStoreService, provideDataComponentStore } from '../../services/data-component-store.service'
 
 export type InteractiveDataViewComponentState = ColumnGroupSelectionComponentState &
   CustomGroupColumnSelectorComponentState &
@@ -62,10 +63,16 @@ export interface ColumnGroupData {
   selector: 'ocx-interactive-data-view',
   templateUrl: './interactive-data-view.component.html',
   styleUrls: ['./interactive-data-view.component.css'],
-  providers: [{ provide: 'InteractiveDataViewComponent', useExisting: InteractiveDataViewComponent }],
+  providers: [{ provide: 'InteractiveDataViewComponent', useExisting: InteractiveDataViewComponent }, provideDataComponentStore()],
 })
 export class InteractiveDataViewComponent implements OnInit, AfterContentInit {
   private readonly slotService = inject(SlotService)
+  private readonly dataComponentStore = inject(DataComponentStoreService)
+
+  @Input()
+  set myValue(value: number) {
+      this.dataComponentStore.myValue.set(value);
+  }
 
   _dataViewComponent: DataViewComponent | undefined
   @ViewChild(DataViewComponent) set dataView(ref: DataViewComponent | undefined) {

@@ -27,6 +27,7 @@ import {
   ListGridData,
 } from '../data-list-grid/data-list-grid.component'
 import { DataTableComponent, DataTableComponentState, Row, Sort } from '../data-table/data-table.component'
+import { DataComponentStoreService, provideDataComponentStore } from '../../services/data-component-store.service'
 
 export type RowListGridData = ListGridData & Row
 
@@ -37,10 +38,16 @@ export type DataViewComponentState = DataListGridComponentState & DataTableCompo
   selector: 'ocx-data-view',
   templateUrl: './data-view.component.html',
   styleUrls: ['./data-view.component.css'],
-  providers: [{ provide: 'DataViewComponent', useExisting: DataViewComponent }],
+  providers: [{ provide: 'DataViewComponent', useExisting: DataViewComponent }, provideDataComponentStore()],
 })
 export class DataViewComponent implements DoCheck, OnInit, AfterContentInit {
   private readonly injector = inject(Injector)
+  private readonly dataComponentStore = inject(DataComponentStoreService)
+  
+    @Input()
+    set myValue(value: number) {
+        this.dataComponentStore.myValue.set(value);
+    }
 
   _dataListGridComponent: DataListGridComponent | undefined
   @ViewChild(DataListGridComponent) set listGrid(ref: DataListGridComponent | undefined) {
