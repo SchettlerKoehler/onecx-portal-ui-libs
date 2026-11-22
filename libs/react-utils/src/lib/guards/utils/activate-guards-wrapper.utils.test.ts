@@ -3,7 +3,7 @@ import type { GuardExecutionContext } from './guard-types.utils'
 import { ActivateGuardsWrapper } from './activate-guards-wrapper.utils'
 
 jest.mock('./logger.utils', () => ({
-  createLogger: () => ({ warn: jest.fn(), debug: jest.fn() }),
+  createLogger: () => ({ warn: jest.fn(), error: jest.fn(), debug: jest.fn() }),
 }))
 
 describe('ActivateGuardsWrapper', () => {
@@ -83,7 +83,7 @@ describe('ActivateGuardsWrapper', () => {
     expect(result).toBe(true)
   })
 
-  it('returns true when a guard throws during execution', async () => {
+  it('returns false when a guard throws during execution', async () => {
     const throwingGuard = jest.fn(() => {
       throw new Error('guard error')
     })
@@ -92,7 +92,7 @@ describe('ActivateGuardsWrapper', () => {
       [throwingGuard],
       controller.createInitialRouterSyncState()
     )
-    expect(result).toBe(true)
+    expect(result).toBe(false)
   })
 
   it('does not call resolveRoute when GUARD_CHECK result is true', async () => {

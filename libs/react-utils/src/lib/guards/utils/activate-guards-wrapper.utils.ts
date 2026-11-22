@@ -76,14 +76,14 @@ export class ActivateGuardsWrapper {
   ): Promise<T> {
     const logger = createLogger('ActivateGuardsWrapper')
     const results = await Promise.all(
-      guards.map((guard) => {
-        try {
-          return resolveToPromise(guard(context))
-        } catch {
-          logger.warn('Guard does not implement canActivate:', guard)
-          return Promise.resolve(true)
-        }
-      })
+      guards.map((guard) =>
+        Promise.resolve()
+          .then(() => resolveToPromise(guard(context)))
+          .catch((error: unknown) => {
+            logger.error('Guard failed, blocking activation:', error)
+            return false
+          })
+      )
     )
 
     return combineFn(results)
